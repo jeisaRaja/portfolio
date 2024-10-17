@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Menu({ page }: { page: string }) {
   return (
     <div className="md:fixed  md:flex md:flex-col">
-      <Avatar />
+     <Avatar />
       <div className="flex flex-col h-[7.5rem]">
         <h1 className="flex justify-center mt-5 text-lg">Jeisa Raja</h1>
         <div className="flex flex-row px-3 gap-4 justify-center">

@@ -1,20 +1,34 @@
-import React from 'react'
-
 function HomeHeader() {
   return (
-    <div>
-        <div className='min-h-[13rem] w-full'>
-          <h1 className='text-[1.8rem] font-semibold text-white mb-5 w-full'>Hey there!</h1>
-          <p className='leading-8 w-full'>Welcome to my web development portfolio! I'm an enthusiastic aspiring web developer with a strong desire to learn and grow in this field. My journey in coding has ignited a passion for creating engaging and user-friendly websites, and I'm excited to showcase my projects and progress here.</p>
-        </div>
-        <div className='hidden md:flex w-fit gap-3'>
-          <button className='py-1 px-3 bg-zinc-700 text-white rounded-md'>Featured projects</button>
-          <button className='py-1 px-3 bg-zinc-700 text-white rounded-md'>Experiences</button>
-          <button className='py-1 px-3 bg-zinc-700 text-white rounded-md'>Skills</button>
-          <button className='py-1 px-3 bg-zinc-700 text-white rounded-md'>Work in progress</button>
-        </div>
+    <div className="min-h-[13rem] w-full  rounded-lg">
+      <div className="text-left">
+        <h1 className="text-[2.5rem] font-bold text-white mb-4">Hey there!</h1>
+        <p className="text-lg text-gray-300 leading-relaxed mb-6">
+          Hi! I'm a{" "}
+          <span className="font-bold text-blue-300">
+            full-stack web developer
+          </span>{" "}
+          based in <span className="font-bold">Indonesia</span>, with a passion
+          for <span className="font-bold">backend development</span>. Lately,
+          I've been enjoying building <span className="font-bold">TUIs</span>{" "}
+          and <span className="font-bold">games</span>. Check out my projects
+          below!
+        </p>
+      </div>
+
+      <div className="hidden md:flex justify-start gap-6">
+        <button className="font-medium py-2 px-6 bg-blue-600 text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
+          Projects
+        </button>
+        <button className="font-medium py-2 px-6 bg-blue-600  text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
+          Experiences
+        </button>
+        <button className="font-medium py-2 px-6 bg-blue-600  text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
+          Skills
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default HomeHeader
+export default HomeHeader;

@@ -1,4 +1,3 @@
-import React from 'react'
 import {motion} from 'framer-motion'
 import { animationDuration, customEase } from '../static-data/animation-data'
 import FeaturedProjects from './FeaturedProjects'
