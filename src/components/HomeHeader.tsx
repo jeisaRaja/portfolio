@@ -1,6 +1,6 @@
 function HomeHeader() {
   return (
-    <div className="min-h-[13rem] w-full  rounded-lg">
+    <div className="min-h-[14.5rem] w-full  rounded-lg">
       <div className="text-left">
         <h1 className="text-[2.5rem] font-bold text-white mb-4">Hey there!</h1>
         <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -17,9 +17,11 @@ function HomeHeader() {
       </div>
 
       <div className="hidden md:flex justify-start gap-6">
-        <button className="font-medium py-2 px-6 bg-blue-600 text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
-          Projects
-        </button>
+        <a href="#projects">
+          <button className="font-medium py-2 px-6 bg-blue-600 text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
+            Projects
+          </button>
+        </a>
         <button className="font-medium py-2 px-6 bg-blue-600  text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105">
           Experiences
         </button>

@@ -3,19 +3,24 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./pages/MainPage";
+import { Page } from "./utils/constant";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage page="home"></MainPage>,
+    element: <MainPage page={Page.Home}></MainPage>,
   },
   {
     path: "/projects",
-    element: <MainPage page="projects"></MainPage>,
+    element: <MainPage page={Page.Projects}></MainPage>,
   },
   {
     path: "/about",
-    element: <MainPage page="about"></MainPage>,
+    element: <MainPage page={Page.About}></MainPage>,
+  },
+  {
+    path: "/blogs",
+    element: <MainPage page={Page.Blogs}></MainPage>,
   },
 ]);
 
