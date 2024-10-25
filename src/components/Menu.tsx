@@ -30,7 +30,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className="w-1/2 fixed bottom-5 left-10 text-slate-100 flex flex-col gap-2">
+    <div className="w-1/2 max-w-[100px] fixed bottom-5 left-10 text-slate-100 flex flex-col gap-2">
       <div className="relative flex flex-col">
         <div
           className="absolute w-1 h-5 bg-white transition-transform duration-300"
